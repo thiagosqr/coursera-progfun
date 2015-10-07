@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/scala/objsets/TweetSet.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/scala/objsets/TweetSetSuite.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/activator/akka_http/build.sbt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/activator/akka_http/project/build.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/activator/akka_http/project/plugins.sbt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/activator/akka_http/src/main/scala/AkkaHttpMicroservice.scala">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-arquitetura/2.1.0/sistema-web/src/main/java/InstallCert.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-historico/goias-historico-aspecto/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-historico/goias-historico-jsf/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-historico/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-restful/1.0.x/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-restful/1.0.x/src/main/java/gov/goias/rep/v1/Auth.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-restful/1.0.x/src/main/java/gov/goias/servico/arq/client/JerseyClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-restful/1.0.x/src/main/java/gov/goias/servico/arq/client/RestClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-restful/1.0.x/src/main/java/gov/goias/servico/arq/filter/RestApiFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-restful/1.0.x/src/main/java/gov/goias/servico/arq/rest/RestApi.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/goias-util/java-util/src/main/java/gov/goias/util/ServiceLocator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-ag/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-ag/pom.xml.versionsBackup">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-ag/src/main/java/gov/goias/api/gov/goias/rep/v1/Auth.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-ag/src/main/java/gov/goias/rep/v1/Auth.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-api/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-core/src/main/java/gov/goias/portal/util/CodigosAutorizacao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-core/src/main/java/gov/goias/rep/v1/Auth.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-dominio/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-dominio/src/main/java/gov/goias/persistencia/gerenciador/Autorizacao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-rs/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-rs/src/main/filters/filter.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-rs/src/main/resources/META-INF/gateway.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-rs/src/main/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-rs/target/portal-rs/WEB-INF/classes/META-INF/gateway.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/ApacheHttpClientUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/ApacheHtttClientUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/GenericRequestWrapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/InstallCert.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/Messages.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/PortalApiAuthenticationFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/SoapRestAuthenticationFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/portal/security/Usuario.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/rep/v1/Auth.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/servico/arq/filter/AuthenticationFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/gov/goias/servico/arq/filter/SoapRestAuthenticationFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/portal/portal-security/src/main/java/v1/AuthenticationFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/sfr/sfr-2015-EAP/sfr-desktop/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/idea/sfr/sfr-2015-EAP/sfr-desktop/src/main/java/gov/goias/sfr/service/ServicoProxy.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,91 @@
+Pair and Tuples
+
+    val pair = ("answer", 42) or val par:(String,Int) = ("answer",42)
+
+
+
+Reduction of Lits
+
+    Combining the elements of a list using an operator
+
+    ReduceLeft
+        Inserts a binary operator between adjacent elements of a List
+
+        def sum(xs: List[Int]) = (0 :: sx) reduceLeft((x,y) => x + y)
+        def product(xs: List[Int]) = (1 :: xs) reduceLeft((x,y) => x * y)
+
+        Shorter way: for ((x,y) => x + y) is using  "_" param
+            every _ represents a new parameter of a function, goin from left to right
+
+            def sum(xs: List[Int]) = (0 :: xs) reduceLeft (_ + _)
+
+    FoldLeft (Lef leaning trees)
+        foldLeft is like reduceLeft but takes an accumulator z as an additional parameter
+        which is returned when foldLeft is called on an empty list
+
+        def sum(xs: List[Int]) = (xs foldLeft 0) (_ + _)
+        def product(xs: List[Int]) = (xs foldLeft 1) (_ * _)
+
+              op
+             /  \
+            op   xn
+           /  \
+          op  x2
+         /  \
+        z   x1
+
+
+    Fold Right and Reduce Right
+
+        For operators that are associative and commutative foldLef and foldRight are equivalent
+        (even tough there may be difference in efficiency)
+
+        Sometime only one of the two is appropriate
+
+        Fold right produce right leaning tree
+               op
+              /  \
+             x1  op
+                /  \
+               x2   op
+                   /  \
+                  xn  xn-1
+
+
+
+
+    Laws of Concat
+
+    Natural Induction
+
+        To show a property P(n) for all the integers n >= b
+
+         -> Show that we have P(b) (base case)
+         for all integers  n >= b show the induction step:
+            if one has P(n), then one also has P(n + 1)
+
+        Example:
+
+         Given that n >= 4
+
+           Base Case: factotial(n) >= power(2, n) // 2 ^ n
+           For Induction Step: n+1
+
+           factorial(n +1 ) >= power(2, n+1) // must be true
+
+         So the property factorial hold true for all integers n >= 4
+
+        Referential Transparency
+            During proving of properties applying reduction steps as equalities to some part of a term
+            This works because pure functional programs don't have side effects so that the term is
+            equivalent to the term to which it reduces
+
+            this principle is called referential transparency
+
+
+    Structural Induction
+
+        To prove a property
+
+
+

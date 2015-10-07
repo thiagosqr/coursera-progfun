@@ -1,0 +1,175 @@
+Week 4
+    Funtions as Objects
+
+        The Function type A => B is abbreviation for the class
+        scala.Function1[A,B]
+
+        package scala
+        trait Function1[A,B]{
+            def apply(x: A): B
+        }
+
+        Functions are objects with apply methods
+        there are trais: Function1 up to Function22
+
+
+    Functions as Values
+
+        Anonymous (x: Int) => x * x
+
+        is actually
+
+        new Function1[Int, Int]{
+            def apply(x: Int) = x * x
+        }
+
+        However def f(x: Int): Int is not itself a function value
+        But if if it's used in a place where a function type is expected
+        is converted automatically to the function value
+        (x: Int) => f(x)
+        That's called in lambda calculus eta expansion
+
+
+    Type Bounds
+
+        Upper bound
+
+            def method[S <: SuperType](r: S): S = ... Only if S extends Supertype
+
+        Lower bound
+
+            def method[S >: SubType](r: S): S = ... Only if S is Supertype of S
+
+        Mixed Bounds
+
+            def method[S >: SubType <: TooGenericSuperType](r: S): S = ...
+                S has to be on type interval of Subtype and TooGenericSuperType
+
+    Covariance
+
+            List[Subtype] <: List[SuperType] is covariant of Subtype <: Supertype
+
+        In Scala Arrays are not covariant:
+
+            In Java: SubType[] a = new SubType[]{...};
+                     Supertype[] b = a;
+                     Ok
+
+            In Scala val a: Array[SubType] = Array(...)
+                     val b: Array[SuperType] = a
+                     Error
+
+        The Liskov Substitution Principle (When classes should be subtypes of one another)
+
+            If A <: B then everthing one can do with a value of type B one should also
+            do with a value of A
+
+
+        Scala compiler changes scala.Int to 32 bit integer and scala.Double to Java Doble
+        however these types are classes still
+
+
+
+
+Typing Rules
+
+    if A2 <: A1 and B1 <: B2, then
+
+    A1 => B1  <: A2 => B2
+
+    or
+
+    A2 => B2
+
+    ^     ^
+    ..    ..
+
+    A1 => B1
+
+
+
+    Type Ruling for Functions
+
+
+    If A2 <: A1 and B1 <: B2,
+
+    then A1 => B1 <: A2 => B2
+
+    Fucntions are contravatiant in their argument types and covariant in thei result types
+
+    package scala
+    trait Function1[-T, +U]{
+        def apply(x: T): U
+    }
+
+
+    Lists
+
+        All Lists are constructed from
+
+            the empty list Nil, and
+
+            the constructed operation :: (pronounced cons)
+
+            x :: xs returns a new list with the elements from previous
+
+
+        Eg.
+
+            fruit = "apples" :: ("oranges" :: ("pears" :: Nil))
+
+        Right Associativity
+
+            As Convention operators ending in : associate to the right
+
+            fruit = "oranges" :: "pears" :: Nil interpreted as fruit = "oranges" :: ("pears" :: Nil)
+
+            Methods ending in : are seen as right hand operand (like infix operators)
+
+            As result is interpreted as Nil.::("pears").::("oranges")
+
+        List Patterns can be used in Pattern Matching
+
+            1 :: 2 :: xs = List of Int which starts with 1 then 2
+
+            x :: Nil = List of length 1
+
+            x :: y :: List(xs, ys) :: zs = List of length 3 cos zs can be nil
+
+
+
+        Eg. x :: y
+
+
+    Pattern Matching instead of Decomposition
+
+        Attemps Classification and access methods: quadratic explosion
+        Type tests and type casts: unsafe and low level
+        Object-Oriented decomposition: does not always work, need to touch all classes to add a new method
+
+    Functional Decomposition with Pattern Matching using Case Classes
+
+        Companion objects are added automatically to case classes
+
+        Pattern matching is a generalization of switch from C/Java to class hierarchies
+
+        Patterns are constructed from
+
+            Constructors eg. Number
+            variables eg, n1 (always starting with lower case)
+            wildcard patterns _
+            constants eg 1, true (if litteral using capital letters)
+
+        Rule
+            A MatchError exception is thrown if no pattern matches the value of the selector
+
+
+        Check Expression problem
+
+                If creating lots of classes Pattern MAtching with case classes is a better option
+                If creating lots of methods Object Oriented aproach is a better option
+
+
+
+
+
