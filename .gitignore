@@ -1,4 +1,5 @@
 .idea
 *.iml
-*/target
+week4/patmat/target
+week6/forcomp/target
 .DS_Store
