@@ -1,5 +1,7 @@
 .idea
 *.iml
+progfun/coursera/target
+progfun/coursera/project/target
 week4/patmat/target
 week6/forcomp/target
 .DS_Store

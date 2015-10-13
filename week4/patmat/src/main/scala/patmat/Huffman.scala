@@ -165,7 +165,12 @@ object Huffman {
     def decode(tree: CodeTree, bits: List[Bit]): List[Char] = {
 
       def internalDecode(l: List[Char], tree: CodeTree, bits: List[Bit]): List[Char] = tree match {
-          case x: Leaf => if(bits.length == 0) x.char :: l else internalDecode(x.char :: l, tree, bits.tail)
+          case x: Leaf => {
+            if(bits.length == 0)
+              x.char :: l
+            else
+              internalDecode(x.char :: l, tree, bits.tail)
+          }
           case x: Fork => internalDecode(l, (if(bits.head == 0) x.left else x.right), bits.tail)
       }
 
@@ -198,8 +203,30 @@ object Huffman {
    * This function encodes `text` using the code tree `tree`
    * into a sequence of bits.
    */
-    def encode(tree: CodeTree)(text: List[Char]): List[Bit] = ???
-  
+    def encode(tree: CodeTree)(text: List[Char]): List[Bit] = {
+
+      def internalEncode(l: List[Bit], tree: CodeTree)(text: List[Char]): List[Bit] = tree match {
+
+        case x: Leaf => if(text.isEmpty) l else internalEncode(text.head :: l,tree)(text.tail)
+
+        case x: Fork => {
+
+            val fork = if (chars(x.left).contains(text.head)) x.left
+
+                      else if (chars(x.right).contains(text.head)) x.right
+
+                      else throw new Exception("Does not contains char"+text.head)
+
+              internalEncode(l,fork)(text)
+
+        }
+
+      }
+
+      internalEncode(List[Bit](),tree)(text)
+
+    }
+
   // Part 4b: Encoding using code table
 
   type CodeTable = List[(Char, List[Bit])]
