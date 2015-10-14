@@ -24,7 +24,7 @@ object Anagrams {
   type Occurrences = List[(Char, Int)]
 
   /** The dictionary is simply a sequence of words.
-   *  It is predefined and obtained as a sequence using the utility method `loadDictionary`.
+   *  It is predefined and obtainµed as a sequence using the utility method `loadDictionary`.
    */
   val dictionary: List[Word] = loadDictionary
 
@@ -33,7 +33,12 @@ object Anagrams {
    *  Note: the uppercase and lowercase version of the character are treated as the
    *  same character, and are represented as a lowercase character in the occurrence list.
    */
-  def wordOccurrences(w: Word): Occurrences = ???
+  def wordOccurrences(w: Word): Occurrences = {
+    val m = w.toList.groupBy((el: Char) => w.count(el == _))
+    m.map((k,v) => v.)
+  }
+
+
 
   /** Converts a sentence into its character occurrence list. */
   def sentenceOccurrences(s: Sentence): Occurrences = ???
