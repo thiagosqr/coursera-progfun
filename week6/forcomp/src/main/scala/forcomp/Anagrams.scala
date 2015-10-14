@@ -34,8 +34,8 @@ object Anagrams {
    *  same character, and are represented as a lowercase character in the occurrence list.
    */
   def wordOccurrences(w: Word): Occurrences = {
-    val m = w.toList.groupBy((el: Char) => w.count(el == _))
-    m.map((k,v) => v.)
+    val m = w.toList.groupBy(el => w.count(el == _)).map(_.swap)
+    (for(list <- m.keySet; c <- list) yield (c -> m(list))).toList
   }
 
 
