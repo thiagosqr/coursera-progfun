@@ -64,12 +64,13 @@ object Anagrams {
    */
   lazy val dictionaryByOccurrences: Map[Occurrences, List[Word]] = {
 
-//    val m = Map[Occurrences, List[Word]]().withDefaultValue(List[Word]())
-//
-//    (forcomp.loadDictionary.foldLeft(m))((acc, w) => {
-//      val wordOccur = wordOccurrences(w)
-//      val accumulator = acc ++ (wordOccur -> w :: acc(wordOccur))
-//    })
+    val m = Map[Occurrences, List[Word]]().withDefaultValue(List[Word]())
+
+    (forcomp.loadDictionary.foldLeft(m))((acc, w) => {
+      val wordOccur = wordOccurrences(w)
+      val l = w :: acc(wordOccur)
+      acc.updated(wordOccur, l)
+    })
   }
 
 
